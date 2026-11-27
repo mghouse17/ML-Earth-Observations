@@ -18,12 +18,6 @@ Three notebooks that run in Google Colab (free tier) or on any laptop with Pytho
 
 The free Colab tier is enough for these activities; GPU availability and usage limits may vary. A Google account is needed to run notebooks, but no GitHub account is required to open these public notebooks. You only need **Save a copy in Drive** if you want to keep your own changes.
 
-## How students open them
-- **Colab:** go to colab.research.google.com → File → Upload notebook (or open from Google Drive / GitHub). For a GPU: Runtime → Change runtime type → T4 GPU.
-- **Laptop:** `pip install torch torchvision scikit-learn scikit-image matplotlib rasterio tifffile`, then open in Jupyter.
-
-Each notebook has a settings cell at the top (`N_PER_CLASS`, `N_TRAIN`, epochs) to make it faster or bigger, saves its figures to `figures/`, and ends with discussion questions.
-
 ## Data sources
 - **EuroSAT:** P. Helber et al., IEEE JSTARS 12(7), 2019; MIT licence. Notebook 1 downloads it with `torchvision.datasets.EuroSAT`; notebook 2 downloads the 13-band archive from the TorchGeo Hugging Face mirror (the same URL TorchGeo uses).
 - **Sen1Floods11:** D. Bonafilia et al., CVPR Workshops 2020; public Google Cloud bucket `gs://sen1floods11` (v1.1). Notebook 3 downloads over HTTPS and falls back to `gsutil` if HTTPS fails.
